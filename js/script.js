@@ -1,15 +1,21 @@
-function printMessage(msg){
-	var div = document.createElement('div');
-	div.innerHTML = msg;
-	document.getElementById('messages').appendChild(div);
+if (randomNumber == '1') {
+  computerMove = 'kamień';
+} else {
+  computerMove = 'nieznany ruch';
 }
+printMessage('Mój ruch: ' + computerMove);
 
-function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
+if (randomNumber == '2') {
+  computerMove = 'papier';
+} else {
+  computerMove = 'nieznany ruch';
 }
+printMessage('Mój ruch: ' + computerMove);
 
-var computerMove;
-computerMove = 'kamień';
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
-computerMove = 'papier';
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
+if (randomNumber == '3') {
+  computerMove = 'nożyce';
+} else {
+  computerMove = 'nieznany ruch';
+}
+printMessage('Mój ruch: ' + computerMove);
+
